@@ -1,1 +1,1 @@
-# medical-ai
+# pdf-qa
