@@ -94,7 +94,7 @@ def member_page():
     ### OpenAI API Key
     # load_dotenv()
     # api = os.getenv("openai_api_key")
-    api = "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"
+    api = "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"
     os.environ["OPENAI_API_KEY"] = api
 
     question=""
