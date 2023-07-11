@@ -62,17 +62,17 @@ file_directory = os.path.join(Path.cwd(),"file_directory")
 pdf_files = sorted([file for file in os.listdir(file_directory)])
 
 
-@st.cache_resource()
+#@st.cache_resource()
 def get_embeddings():
     return HuggingFaceEmbeddings()
 
 
-@st.cache_resource()
+#@st.cache_resource()
 def get_qa_chain():
     return load_qa_chain(OpenAI(), chain_type="stuff")
 
 
-@st.cache_resource()
+#@st.cache_resource()
 def get_chunk_lst(pdf_text):
     splitter = CharacterTextSplitter(
                 separator = ".",
