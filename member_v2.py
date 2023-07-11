@@ -21,7 +21,7 @@ r = sr.Recognizer()
 
 
 # extract text from pdf
-@st.cache_data()
+#@st.cache_data()
 def extract_text(pdf_path):
     # extracted_text = text = high_level.extract_text(pdf_path, "")
     doc_reader = PdfReader(pdf_path)
@@ -34,7 +34,7 @@ def extract_text(pdf_path):
 
 
 # extract text from multiple pdf files
-@st.cache_data()
+#@st.cache_data()
 def extract_text_multiple(pdfs_folder):
     # extracted_text = text = high_level.extract_text(pdf_path, "")
     raw_text = ""
